@@ -4,6 +4,9 @@ let compScore=0;
 const choices= document.querySelectorAll(".choice");
 const msg= document.querySelector("#msg");
 
+const userScorePara= document. quesrySelector("#user_score");
+const compScorePara= document. quesrySelector("#comp_score");
+
 const drawGame = ()=>{
     console.log("Game was draw");
     msg.innerText = "Game was draw, please try again!";
@@ -13,11 +16,15 @@ const drawGame = ()=>{
 const showWinner = (userWin)=>{
     if(userWin)
         {
+            userScore++;
+            userScorePara.innerText= userScore;
             console.log("Ohhh, you won:))");
             msg.innerText = "Ohhh, you won:))";
             msg.style.backgroundColor = "green";
         }
     else{
+        compScore++;
+        compScorePara.innerText= compScore;
         console.log("Oppss, you lost!!");
         msg.innerText = "Oppss, you lost!!";
         msg.style.backgroundColor = "red";
