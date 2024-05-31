@@ -55,7 +55,8 @@ img{
 }
 
 #msg{
-    background-color: aqua;
+     background-color:black;
+    color: white;
     display: inline;
     padding: 2rem;
     border: 2rem;
