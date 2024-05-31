@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    background-color: skyblue;
+    color: black;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice{
+    height: 170px;
+    width: 170px;
+    background-color: pink;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;        /*to make images to cemter, also can use margin to images for doing the same*/
+}
+.choice:hover{
+    /*opacity: 0.5;*/
+    cursor: pointer;
+    background-color: black;
+}
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;           /*to make image look as it should be, not to shrink, not to stretch*/
+    border-radius: 50%;          /*to make img circular*/ 
+}
+.choices{
+    display: flex;               /*to make images vertical to horizontal on webpage*/
+    justify-content: center;     /*to bring images to the center*/
+    align-content: center;       /*tp bring the message(text) to center*/
+    gap: 3rem;
+    margin: 5rem;
+}
+.score_board{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#user_score,
+#comp_score{
+    font-size: 4rem;
+}
+
+.msg_container{
+    padding: 5rem;
+}
+
+#msg{
+    background-color: aqua;
+    display: inline;
+    padding: 2rem;
+    border: 2rem;
+    border-radius: 1rem;
+}
+
+#msg:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
